@@ -17,6 +17,14 @@ hashmap.set(cities, 'FL', 'jacksonville')
 # add some more cities
 hashmap.set(cities, 'NY', 'New York')
 hashmap.set(cities, 'OR', 'Portland')
+ 
+print '*' * 20
+toMap = []
+hashmap.dump(cities, toMap)
+print toMap
+hashmap.set(toMap, 'CA', '*****************')
+hashmap.list(toMap)
+print '*' * 20
 
 # print out some cities
 print '-' * 10

@@ -62,3 +62,12 @@ def list(aMap):
         if bucket:
             for k, v in bucket:
                 print k, v
+
+def dump(aMap, toMap):
+    """Dump aMap to toMap."""
+    for bucket in aMap:
+        if bucket:
+            for k, v in bucket:
+                tmp = [(k, v)]
+                toMap.append(tmp);
+
