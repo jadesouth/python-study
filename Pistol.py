@@ -1,2 +1,5 @@
-class Pistol(Arm):
+import Arm
+
+class Pistol(Arm.Arm):
+    pass
 

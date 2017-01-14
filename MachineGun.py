@@ -1,6 +1,8 @@
 import random
 
-class MachineGun(Arm):
+import Arm
+
+class MachineGun(Arm.Arm):
 
     def shoot(self):
         return [
